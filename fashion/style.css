@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'EB Garamond', serif;
+}
+h2{
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+    margin: 30px 10px;
+    font-family: 'EB Garamond', serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+#first{
+    margin: 0 20px;
+}
+#second{
+    margin: 0 20px 20px;
+}
+article,.accessories{
+    border: 1px solid black;
+}
+article p{
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'EB Garamond', serif;
+}
+.dress, .belt,.glasses{
+    width: 25%;
+}
+.celebrity{
+    width: 50%;
+}
+.celebrity-img{
+    width: 100%;
+    height: auto;
+}
+.accessories{
+    width:75%;
+    display: flex;
+    flex-direction: column;
+}
+.accessories li{
+    list-style: none;
+    flex: 1;
+    width: 100%;
+   display: flex;
+   align-items: center;
+}
+.accessories li a{
+    color: black;
+    padding-left: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'EB Garamond', serif;
+}
+.accessories li a:hover{
+    text-decoration: underline ;
+}
+
+.accessories li:nth-child(1){ background-color: #ece1dd;}
+.accessories li:nth-child(2){ background-color: #e2d7d2;}
+.accessories li:nth-child(3){ background-color: #d3c6c1;}
+.accessories li:nth-child(4){ background-color: #c2b7b4;}
+.accessories li:nth-child(5){ background-color: #a79b97;}
+
+
+
+@media screen and (max-width:600px) {
+    section{
+        display: flex;
+        justify-content: center;
+        flex-wrap:wrap ;
+    }
+    .dress, .belt,.glasses,.celebrity,.accessories{
+        width: 100%;
+    }
+    article{
+        padding-bottom: 100px;
+    }
+    .accessories li{
+       padding: 30px 0;
+    }
+}
